@@ -19,7 +19,7 @@ public class RestaurantController {
     private RestaurantServiceImpl restaurantService;
 
     @Autowired
-    public void RestaurantServiceRestController(
+    public void RestaurantController(
             MenuItemServiceImpl menuItemService,
             RestaurantServiceImpl restaurantService
     ){

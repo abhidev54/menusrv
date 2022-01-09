@@ -8,17 +8,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Document
-public class MenuItem {
+public class Category {
     @Id
     private String id;
 
-    private String restaurantId;
-
-    private String categoryId;
-
     private String name;
-
-    private String description;
-
-    private double price;
 }
