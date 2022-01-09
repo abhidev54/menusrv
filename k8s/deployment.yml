@@ -1,0 +1,17 @@
+apiVersion: menusrv/v1
+kind: Deployment
+metadata:
+  name: menusrv
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: menusrv
+        visualize: "true"
+    spec:
+      containers:
+        - name: menusrv-pod
+          image: menusrv
+          ports:
+            - containerPort: 8080

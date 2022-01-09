@@ -1,0 +1,15 @@
+apiVersion: menusrv/v1
+kind: Service
+metadata:
+  labels:
+    visualize: "true"
+  name: menusrv-service
+spec:
+  selector:
+    app: menusrv
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
