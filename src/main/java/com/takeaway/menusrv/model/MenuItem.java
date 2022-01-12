@@ -21,4 +21,8 @@ public class MenuItem {
     private String description;
 
     private double price;
+
+    private int stock;
+
+    private StockAvailability stockAvailability;
 }
